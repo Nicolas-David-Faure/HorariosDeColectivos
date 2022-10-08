@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" >
+    <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./normalize.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tu Horario de Colectivo</title>
+</head>
+<body>
+    <header class="hero ">
+        <div class="hero__container">       
+            <div  class="hero__container_2">
+                <img class="hero__img_logo" src="./assets/imagenes/logos/logo-colectivo.png" alt="Colectivos">
+            </div>
+            
+            <div class="hero__container_1">
+                <h1 class="hero__container_h1">Tu Horario de Colectivo</h1>
+                <h3 class="hero__container_h3">Chaco - Argentina</h3>
+            </div>
+        </div>
+        <div class="container_nav">
+            <nav class="hero__nav">
+                <ul class="hero__nav_ul">
+                    <li class="hero__nav_ul_li"><a href="#" class="hero__nav_ul_li_a">Contacto</a></li>
+                    <li class="hero__nav_ul_li"><a href="#" class="hero__nav_ul_li_a">Sobre el proyecto</a></li>
+                    <li class="hero__nav_ul_li"><a href="#" class="hero__nav_ul_li_a Otro">Otro</a></li>               
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor__main">
+         <section class="section__1">
+            <div class="section__api shadow p-3 mb-5 bg-white rounded">
+                <div class="section__api_h4">
+                    <h4 class="section__api_h4_1">¿A donde quieres ir?</h4>
+                </div>
+                
+                    <div class="section__api_principal">
+                        <div class="section__api_label_content">
+                            <label for="input_1" class="section__api_label">¿De donde sale?</label>
+                            <input type="text" class="section__api_input1" id="input_1" placeholder="Ingrese una ciudad de chaco">
+                        </div>
+                        <div id="section__api_principal_recomendations" class="section__api_principal_recomendations">
+                            
+                        </div>
+                        <div id="section__api_principal_recomendations2" class="section__api_principal_recomendations2">
+                            
+                        </div>
+                        <div class="section__api_label_content">
+                            <label for="input_2" class="section__api_label">¿A donde va?</label>
+                            <input type="text" class="section__api_input2" id="input_2" placeholder="Ingrese una ciudad de chaco">
+                        </div>
+                            <div>
+                                <label for="section__api_select" class="section__api_label">¿Que día quiere viajar?</label>
+                                <select id="section__api_select" class="section__api_select">
+                                    <option value="">Selecciona un día</option>
+                                    <option value="1">Lunes</option>
+                                    <option value="2">Martes</option>
+                                    <option value="3">Miercoles</option>
+                                    <option value="4">Jueves</option>
+                                    <option value="5">Viernes</option>
+                                    <option value="6">Sábado</option>
+                                    <option value="7">Domingo</option>
+                                </select>
+                            </div>
+                        
+                            <button id="boton_buscar" class="section__api_principal_button">Buscar coincidencia</button>
+                    </div>
+                
+            </div>
+            <div class="section__info ">
+                <div class="section__info_cont">
+                    <h2 class="section__info_cont_h2">Hora de salida</h2>
+                    <ul id="informacion-de-colectivos-salida" class="informacion-de-colectivos-salida"></ul>
+                    <hr />
+                    <h2 class="section__info_cont_h2">Hora de llegada</h2>
+                    <ul id="informacion-de-colectivos-llegada" class="informacion-de-colectivos-llegada"></ul>
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </main>
+    <footer class="footer-main"></footer>
+   
+    <script src="./scripts.js"></script>
+</body>
+</html>
